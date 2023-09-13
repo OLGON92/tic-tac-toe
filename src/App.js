@@ -2,8 +2,18 @@ import React from "react";
 
 //Reads value prop that will pass from Board
 function Square({ value }) {
+  function handleClick() {
+    console.log("clicked");
+  }
   //Curly braces around value renders the variable value
-  return <button className="square">{value}</button>;
+  return (
+    <button 
+      className="square" 
+      onClick={handleClick}
+    >
+      {value}
+    </button>
+  );
 }
 
 export default function Board() {
