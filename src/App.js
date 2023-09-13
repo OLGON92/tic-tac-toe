@@ -1,5 +1,5 @@
 //Reads value prop that will pass from Board
-function Square(value) {
+function Square({ value }) {
   return <button className="square">1</button>;
 }
 
